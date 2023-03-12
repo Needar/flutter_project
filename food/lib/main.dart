@@ -1,10 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:food/Jwan%20Ismail/saved.dart';
+import 'package:food/Maryam%20Mohamed/Profile.dart';
 import 'package:food/main.dart';
 import 'package:food/needar%20zuher/search.dart';
+import 'package:food/sdra%20arif/bookings.dart';
 import 'needar zuher/search.dart';
 
 void main() {
-  runApp(const mainpage());
+  runApp(const myApp());
+}
+
+class myApp extends StatelessWidget {
+  const myApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'flutter',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: mainpage(),
+    );
+  }
 }
 
 class mainpage extends StatefulWidget {
@@ -15,32 +31,45 @@ class mainpage extends StatefulWidget {
 }
 
 class _mainpageState extends State<mainpage> {
-  int index = 0;
-  final Screens = [SearchScreen()];
+  int Index = 0;
+  final Screens = [
+    SearchScreen(),
+    SavedScreen(),
+    BookingScreen(),
+    ProfileScreen()
+  ];
   @override
+  void _onItemTap(int index) {
+    setState(() {
+      Index = index;
+    });
+  }
+
   Widget build(BuildContext context) => Scaffold(
-        body: Screens[index],
-        bottomNavigationBar: NavigationBarTheme(
-          data: NavigationBarThemeData(
-              labelTextStyle: MaterialStateProperty.all(
-                  TextStyle(fontSize: 14, fontWeight: FontWeight.w500))),
-          child: NavigationBar(
-              height: 60,
-              backgroundColor: Color.fromARGB(255, 74, 73, 73),
-              selectedIndex: index,
-              onDestinationSelected: (index) =>
-                  setState(() => this.index = index),
-              destinations: [
-                NavigationDestination(
-                    icon: Icon(Icons.search_outlined), label: "Search"),
-                NavigationDestination(
-                    icon: Icon(Icons.favorite_outline), label: "Saved"),
-                NavigationDestination(
-                    icon: Icon(Icons.work_outline), label: "Bookings"),
-                NavigationDestination(
-                    icon: Icon(Icons.account_circle_outlined),
-                    label: "Profile"),
-              ]),
+        body: Screens[Index],
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Color.fromARGB(255, 83, 85, 83),
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.search_outlined, size: 30),
+              label: 'Search',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite_outline, size: 30),
+              label: 'Saved',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.work_outline, size: 30),
+              label: 'Booking',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined, size: 30),
+              label: 'Profile',
+            )
+          ],
+          currentIndex: Index,
+          onTap: _onItemTap,
         ),
       );
 }
