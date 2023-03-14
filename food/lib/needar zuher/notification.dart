@@ -11,12 +11,12 @@ class NotificationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 83, 85, 83),
+          backgroundColor: Color.fromARGB(255, 45, 106, 186),
           title: Text(
             "Your Notifications",
-            style: TextStyle(fontSize: 23, color: Colors.white),
+            style: TextStyle(fontSize: 20, color: Colors.white),
           ),
         ),
         body: ListView.builder(
@@ -26,7 +26,7 @@ class NotificationScreen extends StatelessWidget {
               margin: EdgeInsets.all(2),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
-                  color: Color.fromARGB(255, 143, 145, 143)),
+                  color: Color.fromARGB(164, 149, 149, 158)),
               child: ListTile(
                   leading: CircleAvatar(
                     radius: 30,

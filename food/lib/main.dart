@@ -49,22 +49,22 @@ class _mainpageState extends State<mainpage> {
         body: Screens[Index],
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Color.fromARGB(255, 83, 85, 83),
+          backgroundColor: Colors.white,
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.search_outlined, size: 30),
+              icon: Icon(Icons.search_outlined, size: 27),
               label: 'Search',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite_outline, size: 30),
+              icon: Icon(Icons.favorite_outline, size: 27),
               label: 'Saved',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.work_outline, size: 30),
+              icon: Icon(Icons.work_outline, size: 27),
               label: 'Booking',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle_outlined, size: 30),
+              icon: Icon(Icons.account_circle_outlined, size: 27),
               label: 'Profile',
             )
           ],
