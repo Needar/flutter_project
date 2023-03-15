@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:food/needar%20zuher/widget.dart';
 
 import 'notification.dart';
 
@@ -76,7 +77,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
           ),
-          backgroundColor: Color.fromARGB(255, 36, 94, 171),
+          backgroundColor: Color.fromARGB(255, 29, 56, 192),
           title: Center(
             child: Text(
               'Booking.com',
@@ -180,23 +181,23 @@ class _SearchScreenState extends State<SearchScreen> {
             ),
             Positioned(
                 left: 22,
-                bottom: 117,
+                bottom: 231,
                 child: Container(
                   width: 349,
-                  height: 50,
+                  height: 49,
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(235, 34, 111, 188),
+                      color: Color.fromARGB(255, 29, 56, 192),
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(6),
                           bottomRight: Radius.circular(6))),
                 )),
             Positioned(
                 left: 157,
-                bottom: 131,
+                bottom: 245,
                 child: Text(
                   "Search",
                   style: TextStyle(
-                      color: Color.fromARGB(255, 246, 243, 243),
+                      color: Color.fromARGB(255, 252, 252, 252),
                       fontSize: 18,
                       fontWeight: FontWeight.w500),
                 )),
@@ -205,8 +206,9 @@ class _SearchScreenState extends State<SearchScreen> {
                 top: 255,
                 child: Text(
                   "Travel more, spend less",
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
+            DiscountWidget(),
           ]),
         ),
       ),

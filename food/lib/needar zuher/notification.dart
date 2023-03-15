@@ -13,7 +13,7 @@ class NotificationScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 45, 106, 186),
+          backgroundColor: Color.fromARGB(255, 29, 56, 192),
           title: Text(
             "Your Notifications",
             style: TextStyle(fontSize: 20, color: Colors.white),
