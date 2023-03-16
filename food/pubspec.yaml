@@ -74,6 +74,7 @@ flutter:
   - image/ind.jpg
   - image/B.jpg
   - image/queen.jpg
+  - image/gl.webp
 
   # https://flutter.dev/assets-and-images/#resolution-aware
 

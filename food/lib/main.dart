@@ -36,7 +36,7 @@ class _mainpageState extends State<mainpage> {
     SearchScreen(),
     SavedScreen(),
     BookingScreen(),
-    ProfileScreen()
+    ProfileScreen(),
   ];
   @override
   void _onItemTap(int index) {
