@@ -13,9 +13,9 @@ class DiscountWidget extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 300, bottom: 10, left: 20, right: 10),
+            margin: EdgeInsets.only(top: 325, bottom: 10, left: 20, right: 10),
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 140,
+            height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -23,7 +23,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 33,
-              top: 310,
+              top: 335,
               child: Text(
                 "Genius",
                 style: TextStyle(
@@ -33,7 +33,7 @@ class DiscountWidget extends StatelessWidget {
               )),
           Positioned(
             left: 33,
-            top: 340,
+            top: 367,
             child: Text(
               "You're at Genius Level 1 in",
               style: TextStyle(
@@ -44,7 +44,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
             left: 33,
-            top: 360,
+            top: 388,
             child: Text(
               "our loyalty program",
               style: TextStyle(
@@ -54,9 +54,9 @@ class DiscountWidget extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 300, bottom: 10, left: 235, right: 10),
+            margin: EdgeInsets.only(top: 325, bottom: 10, left: 235, right: 10),
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 140,
+            height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -65,7 +65,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 245,
-              top: 315,
+              top: 340,
               child: Text(
                 "10% discounts",
                 style: TextStyle(
@@ -75,7 +75,7 @@ class DiscountWidget extends StatelessWidget {
               )),
           Positioned(
             left: 245,
-            top: 345,
+            top: 370,
             child: Text(
               "Enjoy discounts at participating",
               style: TextStyle(
@@ -86,7 +86,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
             left: 245,
-            top: 365,
+            top: 390,
             child: Text(
               "properties worldwide",
               style: TextStyle(
@@ -97,7 +97,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 395,
-              top: 315,
+              top: 340,
               child: Container(
                 padding: EdgeInsets.all(1),
                 decoration: BoxDecoration(
@@ -110,9 +110,9 @@ class DiscountWidget extends StatelessWidget {
                 ),
               )),
           Container(
-            margin: EdgeInsets.only(top: 300, bottom: 10, left: 450, right: 10),
+            margin: EdgeInsets.only(top: 325, bottom: 10, left: 450, right: 10),
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 140,
+            height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -121,7 +121,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 463,
-              top: 315,
+              top: 340,
               child: Text(
                 "15% discounts",
                 style: TextStyle(
@@ -131,7 +131,7 @@ class DiscountWidget extends StatelessWidget {
               )),
           Positioned(
             left: 463,
-            top: 345,
+            top: 370,
             child: Text(
               "Complete 5 stays to unlock",
               style: TextStyle(
@@ -142,7 +142,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
             left: 463,
-            top: 365,
+            top: 390,
             child: Text(
               "Genius Level 2",
               style: TextStyle(
@@ -153,16 +153,16 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 610,
-              top: 315,
+              top: 340,
               child: Icon(
                 Icons.lock_outline,
                 size: 23,
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: EdgeInsets.only(top: 300, bottom: 10, left: 664, right: 10),
+            margin: EdgeInsets.only(top: 325, bottom: 10, left: 664, right: 10),
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 140,
+            height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -171,7 +171,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 680,
-              top: 315,
+              top: 340,
               child: Text(
                 "Free breakfasts",
                 style: TextStyle(
@@ -181,7 +181,7 @@ class DiscountWidget extends StatelessWidget {
               )),
           Positioned(
             left: 680,
-            top: 345,
+            top: 370,
             child: Text(
               "Complete 5 stays to unlock",
               style: TextStyle(
@@ -192,7 +192,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
             left: 680,
-            top: 365,
+            top: 390,
             child: Text(
               "Genius Level 2",
               style: TextStyle(
@@ -203,16 +203,16 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 825,
-              top: 315,
+              top: 340,
               child: Icon(
                 Icons.lock_outline,
                 size: 23,
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: EdgeInsets.only(top: 300, bottom: 10, left: 878, right: 10),
+            margin: EdgeInsets.only(top: 325, bottom: 10, left: 878, right: 10),
             padding: EdgeInsets.symmetric(horizontal: 10),
-            height: 140,
+            height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
@@ -221,7 +221,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               left: 890,
-              top: 315,
+              top: 340,
               child: Text(
                 "Free room upgrades",
                 style: TextStyle(
@@ -231,7 +231,7 @@ class DiscountWidget extends StatelessWidget {
               )),
           Positioned(
             left: 890,
-            top: 345,
+            top: 370,
             child: Text(
               "Complete 5 stays to unlock",
               style: TextStyle(
@@ -242,7 +242,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
             left: 890,
-            top: 365,
+            top: 390,
             child: Text(
               "Genius Level 2",
               style: TextStyle(
@@ -253,7 +253,7 @@ class DiscountWidget extends StatelessWidget {
           ),
           Positioned(
               right: 25,
-              top: 315,
+              top: 340,
               child: Icon(
                 Icons.lock_outline,
                 size: 23,

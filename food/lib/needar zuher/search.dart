@@ -102,8 +102,9 @@ class _SearchScreenState extends State<SearchScreen> {
           child: Stack(children: [
             Container(
               width: 357,
-              height: 208,
-              margin: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+              height: 225,
+              margin: const EdgeInsets.only(
+                  top: 15, left: 18, right: 9, bottom: 900),
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(9),
@@ -132,11 +133,11 @@ class _SearchScreenState extends State<SearchScreen> {
               color: Colors.amber,
               indent: 22,
               endIndent: 22,
-              height: 135,
+              height: 145,
               thickness: 4,
             ),
             Positioned(
-              top: 79,
+              top: 88,
               left: 35,
               child: Icon(
                 Icons.calendar_month_outlined,
@@ -144,7 +145,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
             Positioned(
-                top: 84,
+                top: 93,
                 left: 75,
                 child: Text(
                   "Tue, Mar 14 - Wed , Mar 15",
@@ -154,11 +155,11 @@ class _SearchScreenState extends State<SearchScreen> {
               color: Colors.amber,
               indent: 22,
               endIndent: 22,
-              height: 235,
+              height: 259,
               thickness: 4,
             ),
             Positioned(
-              top: 129,
+              top: 144,
               left: 35,
               child: Icon(
                 Icons.person_outlined,
@@ -166,7 +167,7 @@ class _SearchScreenState extends State<SearchScreen> {
               ),
             ),
             Positioned(
-                top: 135,
+                top: 148,
                 left: 75,
                 child: Text(
                   "1 room . 2 adults . 0 children",
@@ -176,12 +177,12 @@ class _SearchScreenState extends State<SearchScreen> {
               color: Colors.amber,
               indent: 22,
               endIndent: 22,
-              height: 336,
+              height: 369,
               thickness: 5,
             ),
             Positioned(
                 left: 22,
-                bottom: 231,
+                top: 187,
                 child: Container(
                   width: 349,
                   height: 49,
@@ -193,7 +194,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 )),
             Positioned(
                 left: 157,
-                bottom: 245,
+                top: 198,
                 child: Text(
                   "Search",
                   style: TextStyle(
@@ -203,12 +204,245 @@ class _SearchScreenState extends State<SearchScreen> {
                 )),
             Positioned(
                 left: 15,
-                top: 255,
+                top: 280,
                 child: Text(
                   "Travel more, spend less",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
             DiscountWidget(),
+            Positioned(
+                left: 15,
+                top: 520,
+                child: Text(
+                  "More for you",
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                )),
+            Container(
+              margin:
+                  EdgeInsets.only(top: 600, bottom: 10, left: 11, right: 10),
+              width: 175,
+              height: 200,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10)),
+                  image: DecorationImage(
+                      fit: BoxFit.fitWidth,
+                      image: AssetImage("image/girl.jpg")),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromARGB(169, 109, 100, 100),
+                        offset: new Offset(0, 3),
+                        blurRadius: 0.8)
+                  ]),
+            ),
+            Positioned(
+                bottom: 340,
+                left: 11,
+                child: Container(
+                  width: 175,
+                  height: 100,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10)),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromARGB(126, 109, 100, 100),
+                            offset: Offset(
+                              -1,
+                              1,
+                            ),
+                            blurRadius: 1.5)
+                      ]),
+                )),
+            Positioned(
+                bottom: 400,
+                left: 20,
+                child: Text(
+                  "Extended stays",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black),
+                )),
+            Positioned(
+                bottom: 360,
+                left: 20,
+                child: Text(
+                  '''Live your life anywhere 
+with 30+ night stays''',
+                  maxLines: 10,
+                  style: TextStyle(
+                      fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
+                )),
+            Container(
+              margin:
+                  EdgeInsets.only(top: 600, bottom: 10, left: 205, right: 10),
+              width: 175,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                    fit: BoxFit.fitWidth, image: AssetImage("image/happy.jpg")),
+              ),
+            ),
+            Positioned(
+                bottom: 450,
+                left: 212,
+                child: Text(
+                  "Quick trips",
+                  style: TextStyle(
+                      shadows: [
+                        BoxShadow(offset: new Offset(2, 2), color: Colors.black)
+                      ],
+                      fontSize: 23,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontWeight: FontWeight.w700),
+                )),
+            Container(
+              margin:
+                  EdgeInsets.only(top: 918, bottom: 10, left: 11, right: 10),
+              width: 175,
+              height: 195,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10)),
+                color: Colors.white,
+                image: DecorationImage(
+                    fit: BoxFit.fitWidth,
+                    image: AssetImage("image/travell.jpg")),
+              ),
+            ),
+            Positioned(
+                bottom: 10,
+                left: 11,
+                child: Container(
+                  width: 175,
+                  height: 120,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10)),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromARGB(126, 109, 100, 100),
+                            offset: Offset(
+                              -1,
+                              1,
+                            ),
+                            blurRadius: 1.5)
+                      ]),
+                )),
+            Positioned(
+                bottom: 78,
+                left: 20,
+                child: Text(
+                  '''New year, new 
+adventures''',
+                  maxLines: 10,
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500),
+                )),
+            Positioned(
+                bottom: 23,
+                left: 20,
+                child: Text(
+                  '''Save 15% or more when 
+you book and stay before 
+March 31,2023''',
+                  maxLines: 10,
+                  style: TextStyle(
+                      fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
+                )),
+            Container(
+              margin:
+                  EdgeInsets.only(top: 815, bottom: 10, left: 205, right: 10),
+              width: 175,
+              height: 150,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(10),
+                      topRight: Radius.circular(10)),
+                  color: Colors.white,
+                  image: DecorationImage(
+                      fit: BoxFit.fitWidth,
+                      image: AssetImage("image/hang.jpg")),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromARGB(169, 109, 100, 100),
+                        offset: new Offset(0, 3),
+                        blurRadius: 0.8)
+                  ]),
+            ),
+            Positioned(
+                bottom: 225,
+                left: 205,
+                child: Container(
+                  width: 175,
+                  height: 60,
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10)),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color.fromARGB(126, 109, 100, 100),
+                            offset: Offset(
+                              -1,
+                              1,
+                            ),
+                            blurRadius: 1.5)
+                      ]),
+                )),
+            Positioned(
+                bottom: 260,
+                left: 215,
+                child: Text(
+                  "View all",
+                  style: TextStyle(
+                      fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
+                )),
+            Positioned(
+                bottom: 238,
+                left: 215,
+                child: Text(
+                  "Travel talk",
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500),
+                )),
+            Container(
+              margin:
+                  EdgeInsets.only(top: 1030, bottom: 10, left: 205, right: 10),
+              width: 175,
+              height: 200,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                image: DecorationImage(
+                    fit: BoxFit.fitWidth, image: AssetImage("image/ney.jpg")),
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            Positioned(
+                bottom: 15,
+                left: 212,
+                child: Text(
+                  "Travel articles",
+                  style: TextStyle(
+                      fontSize: 22,
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontWeight: FontWeight.w700),
+                )),
           ]),
         ),
       ),

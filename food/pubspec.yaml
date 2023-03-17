@@ -75,6 +75,12 @@ flutter:
   - image/B.jpg
   - image/queen.jpg
   - image/gl.webp
+  - image/travell.jpg
+  - image/ney.jpg
+  - image/girl.jpg
+  - image/hang.jpg
+  - image/happy.jpg
+
 
   # https://flutter.dev/assets-and-images/#resolution-aware
 
