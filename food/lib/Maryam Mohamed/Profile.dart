@@ -38,15 +38,15 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
           top: 150,
-          left: 105,
-          child: Text("onowen@mohmal.com",
+          left: 90,
+          child: Text("Maryam@gmail.com",
               style: TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w600,
                   color: Colors.white)),
         ),
         Positioned(
-            top: 180,
+            top: 185,
             left: 140,
             child: Text(
               "Genius Level 1",
