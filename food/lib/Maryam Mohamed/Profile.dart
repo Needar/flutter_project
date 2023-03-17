@@ -11,10 +11,10 @@ class ProfileScreen extends StatelessWidget {
     return Stack(
       children: [
         Positioned(
-          top: 8,
+          top: 1,
           child: Container(
-            margin: EdgeInsets.only(left: 1, right: 1, bottom: 400),
-            width: 500,
+            margin: EdgeInsets.only(left: 0, right: 0, bottom: 800, top: 0),
+            width: 440,
             height: 200,
             color: Color.fromARGB(255, 0, 3, 197),
           ),
@@ -28,16 +28,16 @@ class ProfileScreen extends StatelessWidget {
           ),
         ),
         Positioned(
-            bottom: 460,
-            left: 230,
+            bottom: 500,
+            left: 200,
             child: Container(
               width: 60,
               height: 60,
               child: CircleAvatar(backgroundImage: AssetImage("image/gl.webp")),
             )),
         Positioned(
-          bottom: 430,
-          left: 160,
+          bottom: 460,
+          left: 130,
           child: Text("onowen@mohmal.com",
               style: TextStyle(
                   fontSize: 20,
@@ -45,8 +45,8 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.white)),
         ),
         Positioned(
-            bottom: 400,
-            left: 200,
+            bottom: 435,
+            left: 170,
             child: Text(
               "Genius Level 1",
               style: TextStyle(
@@ -65,8 +65,8 @@ class ProfileScreen extends StatelessWidget {
                 height: 135,
                 thickness: 15,
               ),
-              width: 480,
-              height: 200,
+              width: 400,
+              height: 150,
               decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(1),
@@ -75,7 +75,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 270,
+            bottom: 330,
             left: 30,
             child: Container(
               width: 32,
@@ -89,8 +89,8 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 270,
-            left: 440,
+            bottom: 330,
+            left: 370,
             child: Container(
               width: 32,
               height: 32,
@@ -103,21 +103,21 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-          bottom: 275,
+          bottom: 335,
           left: 33,
           child: Icon(
             Icons.perm_identity,
           ),
         ),
         Positioned(
-          bottom: 275,
-          left: 443,
+          bottom: 335,
+          left: 375,
           child: Icon(
             Icons.https_outlined,
           ),
         ),
         Positioned(
-            bottom: 283,
+            bottom: 345,
             left: 100,
             child: Container(
               width: 4,
@@ -130,8 +130,8 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 283,
-            left: 200,
+            bottom: 345,
+            left: 170,
             child: Container(
               width: 4,
               height: 4,
@@ -143,8 +143,8 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 283,
-            left: 300,
+            bottom: 345,
+            left: 250,
             child: Container(
               width: 4,
               height: 4,
@@ -156,8 +156,8 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 283,
-            left: 400,
+            bottom: 345,
+            left: 330,
             child: Container(
               width: 4,
               height: 4,
@@ -169,8 +169,8 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 245,
-            left: 28,
+            bottom: 300,
+            left: 25,
             child: Text(
               " Level 1",
               style: TextStyle(
@@ -179,8 +179,8 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.black),
             )),
         Positioned(
-            bottom: 245,
-            left: 420,
+            bottom: 300,
+            left: 348,
             child: Text(
               " Level 2",
               style: TextStyle(
@@ -192,7 +192,7 @@ class ProfileScreen extends StatelessWidget {
             top: 330,
             left: 12,
             child: Container(
-              width: 480,
+              width: 400,
               height: 50,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -253,7 +253,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
             top: 340,
-            left: 28,
+            left: 25,
             child: Text(
               "Booking.com's loyalty program",
               style: TextStyle(
@@ -263,7 +263,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
             top: 340,
-            left: 400,
+            left: 347,
             child: Text(
               "Genius",
               style: TextStyle(
