@@ -20,8 +20,8 @@ class ProfileScreen extends StatelessWidget {
           ),
         ),
         Positioned(
-          top: 10,
-          right: 20,
+          top: 5,
+          left: 400,
           child: Icon(
             Icons.notifications_outlined,
             color: Colors.white,
@@ -60,8 +60,8 @@ class ProfileScreen extends StatelessWidget {
             child: Container(
               child: Divider(
                 color: Color.fromARGB(255, 197, 195, 188),
-                indent: 22,
-                endIndent: 22,
+                indent: 20,
+                endIndent: 20,
                 height: 135,
                 thickness: 15,
               ),
