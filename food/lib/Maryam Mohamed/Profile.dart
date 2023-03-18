@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-import 'package:food/Maryam%20Mohamed/List.dart';
+import 'get.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned(
-          top: 1,
-          child: Container(
-            margin: EdgeInsets.only(left: 0, right: 0, bottom: 800, top: 0),
-            width: 440,
-            height: 260,
-            color: Color.fromARGB(255, 0, 3, 197),
-          ),
+    return Scaffold(
+        body: Container(
+            child: SingleChildScrollView(
+      scrollDirection: Axis.vertical,
+      child: Stack(children: [
+        Container(
+          margin: EdgeInsets.only(left: 0, right: 0, bottom: 1000, top: 0),
+          width: 440,
+          height: 260,
+          color: Color.fromARGB(255, 0, 3, 197),
         ),
         Positioned(
           top: 20,
@@ -76,7 +76,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 415,
+            top: 300,
             left: 27,
             child: Container(
               width: 32,
@@ -90,7 +90,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 415,
+            top: 300,
             left: 337,
             child: Container(
               width: 32,
@@ -104,21 +104,21 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-          bottom: 420,
+          top: 303,
           left: 30,
           child: Icon(
             Icons.perm_identity,
           ),
         ),
         Positioned(
-          bottom: 420,
+          top: 303,
           left: 340,
           child: Icon(
             Icons.https_outlined,
           ),
         ),
         Positioned(
-            bottom: 428,
+            top: 313,
             left: 100,
             child: Container(
               width: 4,
@@ -131,7 +131,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 428,
+            top: 313,
             left: 165,
             child: Container(
               width: 4,
@@ -144,7 +144,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 428,
+            top: 313,
             left: 230,
             child: Container(
               width: 4,
@@ -157,7 +157,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 428,
+            top: 313,
             left: 290,
             child: Container(
               width: 4,
@@ -170,7 +170,7 @@ class ProfileScreen extends StatelessWidget {
                   ]),
             )),
         Positioned(
-            bottom: 385,
+            top: 340,
             left: 20,
             child: Text(
               " Level 1",
@@ -180,7 +180,7 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.black),
             )),
         Positioned(
-            bottom: 385,
+            top: 340,
             left: 310,
             child: Text(
               " Level 2",
@@ -259,7 +259,7 @@ class ProfileScreen extends StatelessWidget {
               "Booking.com's loyalty program",
               style: TextStyle(
                   fontSize: 15,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w500,
                   color: Color.fromARGB(255, 78, 75, 75)),
             )),
         Positioned(
@@ -272,7 +272,27 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w700,
                   color: Color.fromARGB(255, 0, 3, 197)),
             )),
-      ],
-    );
+        Container(
+          margin: EdgeInsets.only(left: 0, right: 0, bottom: 100, top: 410),
+          child: Column(children: [
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: getlist.length,
+              itemBuilder: (context, int index) {
+                return ListTile(
+                  title: Text(
+                    getlist[index].name,
+                    style: TextStyle(
+                        color: getlist[index].color,
+                        fontWeight: getlist[index].size),
+                  ),
+                  leading: (getlist[index].ic),
+                );
+              },
+            )
+          ]),
+        )
+      ]),
+    )));
   }
 }
