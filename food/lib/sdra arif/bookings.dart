@@ -41,10 +41,8 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
-            Center(child: Image(image: AssetImage("image/active.jpg")),),
-            SizedBox(
-              height: 25,
-            ),
+            Center(child: Image(image: AssetImage("image/active.jpg"),height: 200,width: 400,),),
+            
              Center(child: Text("Where to next?",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
@@ -59,10 +57,8 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
            mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
-             Center(child: Image(image: AssetImage("image/past.jpg")),),
-            SizedBox(
-              height: 25,
-            ),
+             Center(child: Image(image: AssetImage("image/past.jpg"),height: 200,width: 400,),),
+           
              Center(child: Text("Revisit Past trip",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
@@ -77,10 +73,8 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
            mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
-             Center(child: Image(image: AssetImage("image/canceled.jpg")),),
-            SizedBox(
-              height: 25,
-            ),
+             Center(child: Image(image: AssetImage("image/canceled.jpg"),height: 200,width: 400,),),
+            
              Center(child: Text("Sometimes plans change",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
