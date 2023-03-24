@@ -74,6 +74,9 @@ flutter:
   - image/girl.jpg
   - image/hang.jpg
   - image/happy.jpg
+  - image/actives.jpg
+  - image/canceled.jpg
+  - image/past.jpg
 
 
   # https://flutter.dev/assets-and-images/#resolution-aware

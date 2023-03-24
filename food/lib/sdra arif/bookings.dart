@@ -16,6 +16,7 @@ class _BookingScreenState extends State<BookingScreen> {
       length: 3,
       child: Scaffold(
        appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 29, 56, 192),
         title: const Text("Trip"),
         actions:[
           IconButton(
@@ -40,6 +41,10 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
+            Center(child: Image(image: AssetImage("image/active.jpg")),),
+            SizedBox(
+              height: 25,
+            ),
              Center(child: Text("Where to next?",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
@@ -54,7 +59,11 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
            mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
-             Center(child: Text("RevisitPast trip",
+             Center(child: Image(image: AssetImage("image/past.jpg")),),
+            SizedBox(
+              height: 25,
+            ),
+             Center(child: Text("Revisit Past trip",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
               height: 10,
@@ -68,6 +77,10 @@ class _BookingScreenState extends State<BookingScreen> {
         Column(
            mainAxisAlignment: MainAxisAlignment.center,
           children:  const [
+             Center(child: Image(image: AssetImage("image/canceled.jpg")),),
+            SizedBox(
+              height: 25,
+            ),
              Center(child: Text("Sometimes plans change",
               style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
              SizedBox(
