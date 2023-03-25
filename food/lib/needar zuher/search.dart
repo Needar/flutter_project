@@ -44,7 +44,7 @@ class _SearchScreenState extends State<SearchScreen> {
                     const SizedBox(
                       width: 5,
                     ),
-                    const Text("Stays")
+                    const Text("Stays"),
                   ]),
                   Row(children: [
                     const Icon(
@@ -131,8 +131,8 @@ class _SearchScreenState extends State<SearchScreen> {
                 )),
             const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 145,
               thickness: 4,
             ),
@@ -153,8 +153,8 @@ class _SearchScreenState extends State<SearchScreen> {
                 )),
             const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 259,
               thickness: 4,
             ),
@@ -175,8 +175,8 @@ class _SearchScreenState extends State<SearchScreen> {
                 )),
             const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 369,
               thickness: 5,
             ),
@@ -184,7 +184,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 left: 22,
                 top: 187,
                 child: Container(
-                  width: 349,
+                  width: 325,
                   height: 49,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 29, 56, 192),
@@ -218,8 +218,8 @@ class _SearchScreenState extends State<SearchScreen> {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
             Container(
-              margin:
-                  const EdgeInsets.only(top: 600, bottom: 10, left: 11, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 600, bottom: 10, left: 11, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
@@ -279,15 +279,16 @@ with 30+ night stays''',
                       fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
                 )),
             Container(
-              margin:
-                  const EdgeInsets.only(top: 600, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 600, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                    fit: BoxFit.fitWidth, image: AssetImage("image/happy.jpg")),
+                    fit: BoxFit.fitHeight,
+                    image: AssetImage("image/happy.jpg")),
               ),
             ),
             Positioned(
@@ -299,13 +300,13 @@ with 30+ night stays''',
                       shadows: [
                         BoxShadow(offset: new Offset(2, 2), color: Colors.black)
                       ],
-                      fontSize: 23,
+                      fontSize: 22,
                       color: const Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w700),
                 )),
             Container(
-              margin:
-                  const EdgeInsets.only(top: 918, bottom: 10, left: 11, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 918, bottom: 10, left: 11, right: 10),
               width: 175,
               height: 195,
               decoration: const BoxDecoration(
@@ -363,8 +364,8 @@ March 31,2023''',
                       fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
                 )),
             Container(
-              margin:
-                  const EdgeInsets.only(top: 815, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 815, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 150,
               decoration: BoxDecoration(
@@ -386,7 +387,7 @@ March 31,2023''',
                 bottom: 225,
                 left: 205,
                 child: Container(
-                  width: 175,
+                  width: 146,
                   height: 60,
                   decoration: const BoxDecoration(
                       color: Colors.white,
@@ -422,24 +423,24 @@ March 31,2023''',
                       fontWeight: FontWeight.w500),
                 )),
             Container(
-              margin:
-                  const EdgeInsets.only(top: 1030, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 1030, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
                 color: Colors.white,
                 image: const DecorationImage(
-                    fit: BoxFit.fitWidth, image: AssetImage("image/ney.jpg")),
+                    fit: BoxFit.fitHeight, image: AssetImage("image/ney.jpg")),
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
             const Positioned(
                 bottom: 15,
-                left: 212,
+                left: 210,
                 child: Text(
                   "Travel articles",
                   style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w700),
                 )),

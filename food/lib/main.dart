@@ -7,7 +7,7 @@ import 'package:food/sdra%20arif/bookings.dart';
 import 'needar zuher/search.dart';
 
 void main() {
-  runApp( const myApp());
+  runApp(const myApp());
 }
 
 class myApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       title: 'flutter',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home:  mainpage(),
+      home: mainpage(),
     );
   }
 }
