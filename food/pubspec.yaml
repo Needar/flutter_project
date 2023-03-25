@@ -77,6 +77,10 @@ flutter:
   - image/active.jpg
   - image/canceled.jpg
   - image/past.jpg
+  - image/erbil.jpg
+  - image/rixos1.jpg
+  - image/dubai.jpg
+  - image/istanbul.jpg
 
 
   # https://flutter.dev/assets-and-images/#resolution-aware
