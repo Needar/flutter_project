@@ -175,9 +175,9 @@ class _SavedScreen2State extends State<SavedScreen2> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(right: 300),
+            margin: EdgeInsets.only(right: 100),
             color: Colors.white,
-            width: 500,
+            width: 700,
             height: 250,
             child: ListView.builder(
               itemCount: ListDetails.length,
