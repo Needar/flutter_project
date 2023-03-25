@@ -26,7 +26,7 @@ class NotificationScreen extends StatelessWidget {
               margin: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
-                  color: const Color.fromARGB(164, 149, 149, 158)),
+                  color: Color.fromARGB(79, 149, 149, 158)),
               child: ListTile(
                   leading: CircleAvatar(
                     radius: 30,

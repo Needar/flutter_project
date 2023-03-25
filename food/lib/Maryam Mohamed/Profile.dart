@@ -14,7 +14,8 @@ class ProfileScreen extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: Stack(children: [
         Container(
-          margin: const EdgeInsets.only(left: 0, right: 0, bottom: 1000, top: 0),
+          margin:
+              const EdgeInsets.only(left: 0, right: 0, bottom: 1000, top: 0),
           width: 440,
           height: 260,
           color: const Color.fromARGB(255, 0, 3, 197),
@@ -34,7 +35,8 @@ class ProfileScreen extends StatelessWidget {
             child: Container(
               width: 60,
               height: 60,
-              child: const CircleAvatar(backgroundImage: AssetImage("image/gl.webp")),
+              child: const CircleAvatar(
+                  backgroundImage: AssetImage("image/gl.webp")),
             )),
         const Positioned(
           top: 150,
@@ -273,7 +275,8 @@ class ProfileScreen extends StatelessWidget {
                   color: Color.fromARGB(255, 0, 3, 197)),
             )),
         Container(
-          margin: const EdgeInsets.only(left: 0, right: 0, bottom: 100, top: 410),
+          margin:
+              const EdgeInsets.only(left: 0, right: 0, bottom: 100, top: 410),
           child: Column(children: [
             ListView.builder(
               shrinkWrap: true,
