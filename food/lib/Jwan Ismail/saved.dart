@@ -34,7 +34,7 @@ class _SavedScreenState extends State<SavedScreen> {
     return Scaffold(   
       appBar: AppBar(title: Text('Saved'),
       backgroundColor: Color.fromARGB(255, 29, 56, 192),
-      centerTitle: true,actions: [IconButton(onPressed: (() {}), icon: Icon(Icons.add_rounded)
+      centerTitle:true,actions: [IconButton(onPressed: (() {}), icon: Icon(Icons.add_rounded)
       )
       ],
       ),
