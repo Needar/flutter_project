@@ -14,12 +14,13 @@ class ProfileScreen extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: Stack(children: [
         Container(
-          margin: EdgeInsets.only(left: 0, right: 0, bottom: 1000, top: 0),
+          margin:
+              const EdgeInsets.only(left: 0, right: 0, bottom: 1000, top: 0),
           width: 440,
           height: 260,
-          color: Color.fromARGB(255, 0, 3, 197),
+          color: const Color.fromARGB(255, 0, 3, 197),
         ),
-        Positioned(
+        const Positioned(
           top: 20,
           left: 300,
           child: Icon(
@@ -34,9 +35,10 @@ class ProfileScreen extends StatelessWidget {
             child: Container(
               width: 60,
               height: 60,
-              child: CircleAvatar(backgroundImage: AssetImage("image/gl.webp")),
+              child: const CircleAvatar(
+                  backgroundImage: AssetImage("image/gl.webp")),
             )),
-        Positioned(
+        const Positioned(
           top: 150,
           left: 70,
           child: Text("Maryam@gmail.com",
@@ -45,7 +47,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: Colors.white)),
         ),
-        Positioned(
+        const Positioned(
             top: 185,
             left: 130,
             child: Text(
@@ -59,7 +61,7 @@ class ProfileScreen extends StatelessWidget {
             top: 240,
             left: 22,
             child: Container(
-              child: Divider(
+              child: const Divider(
                 color: Color.fromARGB(255, 197, 195, 188),
                 indent: 20,
                 endIndent: 30,
@@ -72,7 +74,7 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(1),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
         Positioned(
@@ -86,7 +88,7 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.amber,
                   borderRadius: BorderRadius.circular(16),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
         Positioned(
@@ -97,20 +99,20 @@ class ProfileScreen extends StatelessWidget {
               height: 32,
               decoration: BoxDecoration(
                   border: Border.all(width: 2, color: Colors.white),
-                  color: Color.fromARGB(255, 230, 228, 225),
+                  color: const Color.fromARGB(255, 230, 228, 225),
                   borderRadius: BorderRadius.circular(15),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
-        Positioned(
+        const Positioned(
           top: 303,
           left: 30,
           child: Icon(
             Icons.perm_identity,
           ),
         ),
-        Positioned(
+        const Positioned(
           top: 303,
           left: 330,
           child: Icon(
@@ -124,10 +126,10 @@ class ProfileScreen extends StatelessWidget {
               width: 4,
               height: 4,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 141, 140, 138),
+                  color: const Color.fromARGB(255, 141, 140, 138),
                   borderRadius: BorderRadius.circular(2),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
         Positioned(
@@ -137,10 +139,10 @@ class ProfileScreen extends StatelessWidget {
               width: 4,
               height: 4,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 141, 140, 138),
+                  color: const Color.fromARGB(255, 141, 140, 138),
                   borderRadius: BorderRadius.circular(2),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
         Positioned(
@@ -150,10 +152,10 @@ class ProfileScreen extends StatelessWidget {
               width: 4,
               height: 4,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 141, 140, 138),
+                  color: const Color.fromARGB(255, 141, 140, 138),
                   borderRadius: BorderRadius.circular(2),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
         Positioned(
@@ -163,13 +165,13 @@ class ProfileScreen extends StatelessWidget {
               width: 4,
               height: 4,
               decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 141, 140, 138),
+                  color: const Color.fromARGB(255, 141, 140, 138),
                   borderRadius: BorderRadius.circular(2),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
-        Positioned(
+        const Positioned(
             top: 340,
             left: 20,
             child: Text(
@@ -179,7 +181,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 340,
             left: 300,
             child: Text(
@@ -199,10 +201,10 @@ class ProfileScreen extends StatelessWidget {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(1),
                   boxShadow: [
-                    BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
+                    const BoxShadow(blurRadius: 1.0, offset: Offset(0, 0))
                   ]),
             )),
-        Positioned(
+        const Positioned(
             top: 260,
             left: 28,
             child: Text(
@@ -212,7 +214,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 260,
             left: 95,
             child: Text(
@@ -222,7 +224,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 260,
             left: 152,
             child: Text(
@@ -232,7 +234,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 280,
             left: 28,
             child: Text(
@@ -242,7 +244,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 280,
             left: 127,
             child: Text(
@@ -252,7 +254,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
-        Positioned(
+        const Positioned(
             top: 410,
             left: 25,
             child: Text(
@@ -262,7 +264,7 @@ class ProfileScreen extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   color: Color.fromARGB(255, 78, 75, 75)),
             )),
-        Positioned(
+        const Positioned(
             top: 410,
             left: 295,
             child: Text(
@@ -273,7 +275,8 @@ class ProfileScreen extends StatelessWidget {
                   color: Color.fromARGB(255, 0, 3, 197)),
             )),
         Container(
-          margin: EdgeInsets.only(left: 0, right: 0, bottom: 100, top: 410),
+          margin:
+              const EdgeInsets.only(left: 0, right: 0, bottom: 100, top: 410),
           child: Column(children: [
             ListView.builder(
               shrinkWrap: true,

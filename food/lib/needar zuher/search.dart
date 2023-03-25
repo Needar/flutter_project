@@ -23,62 +23,62 @@ class _SearchScreenState extends State<SearchScreen> {
         backgroundColor: Colors.white,
         appBar: AppBar(
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(50),
+            preferredSize: const Size.fromHeight(50),
             child: Align(
               alignment: Alignment.center,
               child: TabBar(
                 isScrollable: true,
                 indicator: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: Color.fromARGB(119, 168, 172, 170),
+                    color: const Color.fromARGB(119, 168, 172, 170),
                     border: Border.all(
                       color: Colors.white,
                       width: 2,
                     )),
                 tabs: [
                   Row(children: [
-                    Icon(
+                    const Icon(
                       Icons.bed_outlined,
                       size: 30,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                     ),
-                    Text("Stays")
+                    const Text("Stays"),
                   ]),
                   Row(children: [
-                    Icon(
+                    const Icon(
                       Icons.drive_eta_outlined,
                       size: 30,
                     ),
-                    SizedBox(width: 5),
-                    Text("Car rental")
+                    const SizedBox(width: 5),
+                    const Text("Car rental")
                   ]),
                   Row(children: [
-                    Icon(
+                    const Icon(
                       Icons.local_taxi_outlined,
                       size: 30,
                     ),
-                    SizedBox(width: 5),
-                    Text("Taxi")
+                    const SizedBox(width: 5),
+                    const Text("Taxi")
                   ]),
                   Row(children: [
-                    Icon(
+                    const Icon(
                       Icons.attractions_outlined,
                       size: 30,
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 5,
                       height: 5,
                     ),
-                    Text("Attractions")
+                    const Text("Attractions")
                   ]),
                 ],
               ),
             ),
           ),
-          backgroundColor: Color.fromARGB(255, 29, 56, 192),
-          title: Center(
+          backgroundColor: const Color.fromARGB(255, 29, 56, 192),
+          title: const Center(
             child: Text(
               'Booking.com',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
@@ -90,7 +90,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => NotificationScreen()));
+                          builder: (context) => const NotificationScreen()));
                 },
                 icon: const Icon(
                   Icons.notifications_none_outlined,
@@ -109,9 +109,9 @@ class _SearchScreenState extends State<SearchScreen> {
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(9),
                   border: Border.all(
-                      color: Color.fromARGB(255, 255, 191, 0), width: 4)),
+                      color: const Color.fromARGB(255, 255, 191, 0), width: 4)),
             ),
-            Positioned(
+            const Positioned(
               top: 32,
               left: 35,
               child: Icon(
@@ -119,7 +119,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 size: 25,
               ),
             ),
-            Positioned(
+            const Positioned(
                 top: 35,
                 left: 75,
                 child: Text(
@@ -129,14 +129,14 @@ class _SearchScreenState extends State<SearchScreen> {
                       fontWeight: FontWeight.w400,
                       color: Color.fromARGB(186, 134, 131, 131)),
                 )),
-            Divider(
+            const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 145,
               thickness: 4,
             ),
-            Positioned(
+            const Positioned(
               top: 88,
               left: 35,
               child: Icon(
@@ -144,21 +144,21 @@ class _SearchScreenState extends State<SearchScreen> {
                 size: 25,
               ),
             ),
-            Positioned(
+            const Positioned(
                 top: 93,
                 left: 75,
                 child: Text(
                   "Tue, Mar 14 - Wed , Mar 15",
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                 )),
-            Divider(
+            const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 259,
               thickness: 4,
             ),
-            Positioned(
+            const Positioned(
               top: 144,
               left: 35,
               child: Icon(
@@ -166,17 +166,17 @@ class _SearchScreenState extends State<SearchScreen> {
                 size: 25,
               ),
             ),
-            Positioned(
+            const Positioned(
                 top: 148,
                 left: 75,
                 child: Text(
                   "1 room . 2 adults . 0 children",
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
                 )),
-            Divider(
+            const Divider(
               color: Colors.amber,
-              indent: 22,
-              endIndent: 22,
+              indent: 18,
+              endIndent: 12,
               height: 369,
               thickness: 5,
             ),
@@ -184,15 +184,15 @@ class _SearchScreenState extends State<SearchScreen> {
                 left: 22,
                 top: 187,
                 child: Container(
-                  width: 349,
+                  width: 325,
                   height: 49,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 29, 56, 192),
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(6),
                           bottomRight: Radius.circular(6))),
                 )),
-            Positioned(
+            const Positioned(
                 left: 157,
                 top: 198,
                 child: Text(
@@ -202,15 +202,15 @@ class _SearchScreenState extends State<SearchScreen> {
                       fontSize: 18,
                       fontWeight: FontWeight.w500),
                 )),
-            Positioned(
+            const Positioned(
                 left: 15,
                 top: 280,
                 child: Text(
                   "Travel more, spend less",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
-            DiscountWidget(),
-            Positioned(
+            const DiscountWidget(),
+            const Positioned(
                 left: 15,
                 top: 520,
                 child: Text(
@@ -218,21 +218,21 @@ class _SearchScreenState extends State<SearchScreen> {
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
             Container(
-              margin:
-                  EdgeInsets.only(top: 600, bottom: 10, left: 11, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 600, bottom: 10, left: 11, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10)),
-                  image: DecorationImage(
+                  image: const DecorationImage(
                       fit: BoxFit.fitWidth,
                       image: AssetImage("image/girl.jpg")),
                   boxShadow: [
                     BoxShadow(
-                        color: Color.fromARGB(169, 109, 100, 100),
+                        color: const Color.fromARGB(169, 109, 100, 100),
                         offset: new Offset(0, 3),
                         blurRadius: 0.8)
                   ]),
@@ -243,7 +243,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 child: Container(
                   width: 175,
                   height: 100,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(10),
@@ -258,7 +258,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             blurRadius: 1.5)
                       ]),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 400,
                 left: 20,
                 child: Text(
@@ -268,7 +268,7 @@ class _SearchScreenState extends State<SearchScreen> {
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 360,
                 left: 20,
                 child: Text(
@@ -279,15 +279,16 @@ with 30+ night stays''',
                       fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
                 )),
             Container(
-              margin:
-                  EdgeInsets.only(top: 600, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 600, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
-                image: DecorationImage(
-                    fit: BoxFit.fitWidth, image: AssetImage("image/happy.jpg")),
+                image: const DecorationImage(
+                    fit: BoxFit.fitHeight,
+                    image: AssetImage("image/happy.jpg")),
               ),
             ),
             Positioned(
@@ -299,16 +300,16 @@ with 30+ night stays''',
                       shadows: [
                         BoxShadow(offset: new Offset(2, 2), color: Colors.black)
                       ],
-                      fontSize: 23,
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 22,
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w700),
                 )),
             Container(
-              margin:
-                  EdgeInsets.only(top: 918, bottom: 10, left: 11, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 918, bottom: 10, left: 11, right: 10),
               width: 175,
               height: 195,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10)),
@@ -324,7 +325,7 @@ with 30+ night stays''',
                 child: Container(
                   width: 175,
                   height: 120,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(10),
@@ -339,7 +340,7 @@ with 30+ night stays''',
                             blurRadius: 1.5)
                       ]),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 78,
                 left: 20,
                 child: Text(
@@ -351,7 +352,7 @@ adventures''',
                       color: Colors.black,
                       fontWeight: FontWeight.w500),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 23,
                 left: 20,
                 child: Text(
@@ -363,21 +364,21 @@ March 31,2023''',
                       fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
                 )),
             Container(
-              margin:
-                  EdgeInsets.only(top: 815, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 815, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 150,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                  borderRadius: const BorderRadius.only(
                       topLeft: Radius.circular(10),
                       topRight: Radius.circular(10)),
                   color: Colors.white,
-                  image: DecorationImage(
+                  image: const DecorationImage(
                       fit: BoxFit.fitWidth,
                       image: AssetImage("image/hang.jpg")),
                   boxShadow: [
                     BoxShadow(
-                        color: Color.fromARGB(169, 109, 100, 100),
+                        color: const Color.fromARGB(169, 109, 100, 100),
                         offset: new Offset(0, 3),
                         blurRadius: 0.8)
                   ]),
@@ -386,9 +387,9 @@ March 31,2023''',
                 bottom: 225,
                 left: 205,
                 child: Container(
-                  width: 175,
+                  width: 146,
                   height: 60,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(10),
@@ -403,7 +404,7 @@ March 31,2023''',
                             blurRadius: 1.5)
                       ]),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 260,
                 left: 215,
                 child: Text(
@@ -411,7 +412,7 @@ March 31,2023''',
                   style: TextStyle(
                       fontSize: 13, color: Color.fromARGB(222, 96, 94, 94)),
                 )),
-            Positioned(
+            const Positioned(
                 bottom: 238,
                 left: 215,
                 child: Text(
@@ -422,24 +423,24 @@ March 31,2023''',
                       fontWeight: FontWeight.w500),
                 )),
             Container(
-              margin:
-                  EdgeInsets.only(top: 1030, bottom: 10, left: 205, right: 10),
+              margin: const EdgeInsets.only(
+                  top: 1030, bottom: 10, left: 205, right: 10),
               width: 175,
               height: 200,
               decoration: BoxDecoration(
                 color: Colors.white,
-                image: DecorationImage(
-                    fit: BoxFit.fitWidth, image: AssetImage("image/ney.jpg")),
+                image: const DecorationImage(
+                    fit: BoxFit.fitHeight, image: AssetImage("image/ney.jpg")),
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
-            Positioned(
+            const Positioned(
                 bottom: 15,
-                left: 212,
+                left: 210,
                 child: Text(
                   "Travel articles",
                   style: TextStyle(
-                      fontSize: 22,
+                      fontSize: 20,
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w700),
                 )),

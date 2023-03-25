@@ -13,15 +13,15 @@ class DiscountWidget extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            margin: EdgeInsets.only(top: 325, bottom: 10, left: 20, right: 10),
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 20, right: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
-                color: Color.fromARGB(255, 26, 51, 174)),
+                color: const Color.fromARGB(255, 26, 51, 174)),
           ),
-          Positioned(
+          const Positioned(
               left: 33,
               top: 335,
               child: Text(
@@ -31,7 +31,7 @@ class DiscountWidget extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.w500),
               )),
-          Positioned(
+          const Positioned(
             left: 33,
             top: 367,
             child: Text(
@@ -42,7 +42,7 @@ class DiscountWidget extends StatelessWidget {
               ),
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 33,
             top: 388,
             child: Text(
@@ -54,8 +54,8 @@ class DiscountWidget extends StatelessWidget {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 325, bottom: 10, left: 235, right: 10),
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 235, right: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
             decoration: BoxDecoration(
@@ -63,7 +63,7 @@ class DiscountWidget extends StatelessWidget {
                 border: Border.all(width: 1.5, color: Colors.blue),
                 color: Colors.white),
           ),
-          Positioned(
+          const Positioned(
               left: 245,
               top: 340,
               child: Text(
@@ -73,7 +73,7 @@ class DiscountWidget extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.w500),
               )),
-          Positioned(
+          const Positioned(
             left: 245,
             top: 370,
             child: Text(
@@ -84,7 +84,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 245,
             top: 390,
             child: Text(
@@ -99,27 +99,27 @@ class DiscountWidget extends StatelessWidget {
               left: 395,
               top: 340,
               child: Container(
-                padding: EdgeInsets.all(1),
+                padding: const EdgeInsets.all(1),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     border: Border.all(width: 1.5, color: Colors.blue)),
-                child: Icon(
+                child: const Icon(
                   Icons.percent_outlined,
                   size: 15,
                   color: Colors.blue,
                 ),
               )),
           Container(
-            margin: EdgeInsets.only(top: 325, bottom: 10, left: 450, right: 10),
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 450, right: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
                 border: Border.all(width: 1.5, color: Colors.grey),
-                color: Color.fromARGB(37, 109, 104, 104)),
+                color: const Color.fromARGB(37, 109, 104, 104)),
           ),
-          Positioned(
+          const Positioned(
               left: 463,
               top: 340,
               child: Text(
@@ -129,7 +129,7 @@ class DiscountWidget extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.w500),
               )),
-          Positioned(
+          const Positioned(
             left: 463,
             top: 370,
             child: Text(
@@ -140,7 +140,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 463,
             top: 390,
             child: Text(
@@ -151,7 +151,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
               left: 610,
               top: 340,
               child: Icon(
@@ -160,16 +160,16 @@ class DiscountWidget extends StatelessWidget {
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: EdgeInsets.only(top: 325, bottom: 10, left: 664, right: 10),
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 664, right: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
                 border: Border.all(width: 1.5, color: Colors.grey),
-                color: Color.fromARGB(37, 109, 104, 104)),
+                color: const Color.fromARGB(37, 109, 104, 104)),
           ),
-          Positioned(
+          const Positioned(
               left: 680,
               top: 340,
               child: Text(
@@ -179,7 +179,7 @@ class DiscountWidget extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.w500),
               )),
-          Positioned(
+          const Positioned(
             left: 680,
             top: 370,
             child: Text(
@@ -190,7 +190,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 680,
             top: 390,
             child: Text(
@@ -201,7 +201,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
               left: 825,
               top: 340,
               child: Icon(
@@ -210,16 +210,16 @@ class DiscountWidget extends StatelessWidget {
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: EdgeInsets.only(top: 325, bottom: 10, left: 878, right: 10),
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 878, right: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(7),
                 border: Border.all(width: 1.5, color: Colors.grey),
-                color: Color.fromARGB(37, 109, 104, 104)),
+                color: const Color.fromARGB(37, 109, 104, 104)),
           ),
-          Positioned(
+          const Positioned(
               left: 890,
               top: 340,
               child: Text(
@@ -229,7 +229,7 @@ class DiscountWidget extends StatelessWidget {
                     fontSize: 15,
                     fontWeight: FontWeight.w500),
               )),
-          Positioned(
+          const Positioned(
             left: 890,
             top: 370,
             child: Text(
@@ -240,7 +240,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
             left: 890,
             top: 390,
             child: Text(
@@ -251,7 +251,7 @@ class DiscountWidget extends StatelessWidget {
                   fontWeight: FontWeight.w400),
             ),
           ),
-          Positioned(
+          const Positioned(
               right: 25,
               top: 340,
               child: Icon(
