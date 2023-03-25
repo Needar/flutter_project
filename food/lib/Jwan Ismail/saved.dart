@@ -112,7 +112,7 @@ Lists(Title: 'Dubai', Subtitle: '1 property')
       ],
       ),
       ),
-      Container(margin: EdgeInsets.only(right:100),color: Colors.white,width: 700,height: 250,child: ListView.builder(itemCount: ListDetails.length,itemBuilder: (context, index) {
+      Container(margin: EdgeInsets.only(right:200,bottom: 400),color: Colors.white,width: 700,height: 250,child: ListView.builder(itemCount: ListDetails.length,itemBuilder: (context, index) {
       return ListTile(title: Text(ListDetails[index].Title,style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
       subtitle: Text(ListDetails[index].Subtitle,style: TextStyle(fontSize: 12),),trailing: Icon(Icons.more_horiz),
       );
