@@ -22,7 +22,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         const Positioned(
           top: 20,
-          left: 330,
+          left: 300,
           child: Icon(
             Icons.notifications_outlined,
             color: Colors.white,
@@ -31,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         Positioned(
             top: 80,
-            left: 170,
+            left: 130,
             child: Container(
               width: 60,
               height: 60,
@@ -40,7 +40,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         const Positioned(
           top: 150,
-          left: 90,
+          left: 70,
           child: Text("Maryam@gmail.com",
               style: TextStyle(
                   fontSize: 24,
@@ -49,7 +49,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         const Positioned(
             top: 185,
-            left: 140,
+            left: 130,
             child: Text(
               "Genius Level 1",
               style: TextStyle(
@@ -59,16 +59,16 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
             top: 240,
-            left: 10,
+            left: 22,
             child: Container(
               child: const Divider(
                 color: Color.fromARGB(255, 197, 195, 188),
                 indent: 20,
-                endIndent: 40,
+                endIndent: 30,
                 height: 10,
                 thickness: 15,
               ),
-              width: 370,
+              width: 340,
               height: 150,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -93,7 +93,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
             top: 300,
-            left: 337,
+            left: 327,
             child: Container(
               width: 32,
               height: 32,
@@ -114,7 +114,7 @@ class ProfileScreen extends StatelessWidget {
         ),
         const Positioned(
           top: 303,
-          left: 340,
+          left: 330,
           child: Icon(
             Icons.https_outlined,
           ),
@@ -183,7 +183,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         const Positioned(
             top: 340,
-            left: 310,
+            left: 300,
             child: Text(
               " Level 2",
               style: TextStyle(
@@ -193,9 +193,9 @@ class ProfileScreen extends StatelessWidget {
             )),
         Positioned(
             top: 393,
-            left: 10,
+            left: 22,
             child: Container(
-              width: 370,
+              width: 340,
               height: 50,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -210,7 +210,7 @@ class ProfileScreen extends StatelessWidget {
             child: Text(
               "Complete ",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
@@ -220,17 +220,17 @@ class ProfileScreen extends StatelessWidget {
             child: Text(
               " 5 stays",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             )),
         const Positioned(
             top: 260,
-            left: 156,
+            left: 152,
             child: Text(
               "before 16 March 2025 to unlock ",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
@@ -240,7 +240,7 @@ class ProfileScreen extends StatelessWidget {
             child: Text(
               "Genius Level 2",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             )),
@@ -250,7 +250,7 @@ class ProfileScreen extends StatelessWidget {
             child: Text(
               " travel rewards.",
               style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             )),
@@ -266,7 +266,7 @@ class ProfileScreen extends StatelessWidget {
             )),
         const Positioned(
             top: 410,
-            left: 315,
+            left: 295,
             child: Text(
               "Genius",
               style: TextStyle(
