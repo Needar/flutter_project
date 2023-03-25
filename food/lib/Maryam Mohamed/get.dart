@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class geet {
@@ -67,7 +65,7 @@ List<geet> getlist = [
       size: FontWeight.w400),
   geet(
       name: "Travel communities",
-      ic: const Icon(Icons.groups_2_outlined),
+      ic: const Icon(Icons.groups_outlined),
       color: Colors.black,
       size: FontWeight.w400),
   geet(
