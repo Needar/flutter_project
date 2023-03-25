@@ -56,7 +56,7 @@ class _SavedScreenState extends State<SavedScreen> {
       ),
       Container(height: 140,child: ListView.builder(scrollDirection: Axis.horizontal,itemCount: HotelsInfo.length,itemBuilder: (context, index) {
       return Container(margin: EdgeInsets.all(8),width: 100,
-      child: Stack(children: [Container(width: 100,height: 160,
+      child:Stack(children:[Container(width: 100,height:160,
       color: Colors.white,child: Column(mainAxisAlignment: MainAxisAlignment.end,
       children: [Text(HotelsInfo[index].Title,style: TextStyle(color: Colors.black,fontSize: 12),
       ),
