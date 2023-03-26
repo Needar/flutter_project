@@ -280,6 +280,7 @@ class ProfileScreen extends StatelessWidget {
           child: Column(children: [
             ListView.builder(
               shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
               itemCount: getlist.length,
               itemBuilder: (context, int index) {
                 return ListTile(
