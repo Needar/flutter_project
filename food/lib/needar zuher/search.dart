@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -132,7 +130,7 @@ class _SearchScreenState extends State<SearchScreen> {
             const Divider(
               color: Colors.amber,
               indent: 18,
-              endIndent: 12,
+              endIndent: 22,
               height: 145,
               thickness: 4,
             ),
@@ -154,7 +152,7 @@ class _SearchScreenState extends State<SearchScreen> {
             const Divider(
               color: Colors.amber,
               indent: 18,
-              endIndent: 12,
+              endIndent: 22,
               height: 259,
               thickness: 4,
             ),
@@ -176,7 +174,7 @@ class _SearchScreenState extends State<SearchScreen> {
             const Divider(
               color: Colors.amber,
               indent: 18,
-              endIndent: 12,
+              endIndent: 22,
               height: 369,
               thickness: 5,
             ),
@@ -184,7 +182,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 left: 22,
                 top: 187,
                 child: Container(
-                  width: 325,
+                  width: 349,
                   height: 49,
                   decoration: const BoxDecoration(
                       color: Color.fromARGB(255, 29, 56, 192),
@@ -209,7 +207,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   "Travel more, spend less",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
-            const DiscountWidget(),
+            DiscountWidget(),
             const Positioned(
                 left: 15,
                 top: 520,
@@ -287,8 +285,7 @@ with 30+ night stays''',
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
                 image: const DecorationImage(
-                    fit: BoxFit.fitHeight,
-                    image: AssetImage("image/happy.jpg")),
+                    fit: BoxFit.fitWidth, image: AssetImage("image/happy.jpg")),
               ),
             ),
             Positioned(
@@ -387,7 +384,7 @@ March 31,2023''',
                 bottom: 225,
                 left: 205,
                 child: Container(
-                  width: 146,
+                  width: 176,
                   height: 60,
                   decoration: const BoxDecoration(
                       color: Colors.white,
@@ -430,7 +427,7 @@ March 31,2023''',
               decoration: BoxDecoration(
                 color: Colors.white,
                 image: const DecorationImage(
-                    fit: BoxFit.fitHeight, image: AssetImage("image/ney.jpg")),
+                    fit: BoxFit.fitWidth, image: AssetImage("image/ney.jpg")),
                 borderRadius: BorderRadius.circular(10),
               ),
             ),

@@ -13,7 +13,8 @@ class DiscountWidget extends StatelessWidget {
       child: Stack(
         children: [
           Container(
-            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 20, right: 10),
+            margin: const EdgeInsets.only(
+                top: 325, bottom: 10, left: 20, right: 10),
             padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
@@ -32,16 +33,15 @@ class DiscountWidget extends StatelessWidget {
                     fontWeight: FontWeight.w500),
               )),
           const Positioned(
-            left: 33,
-            top: 367,
-            child: Text(
-              "You're at Genius Level 1 in",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 14,
-              ),
-            ),
-          ),
+              left: 33,
+              top: 367,
+              child: Text(
+                "You're at Genius Level 1 in",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 14,
+                ),
+              )),
           const Positioned(
             left: 33,
             top: 388,
@@ -54,7 +54,8 @@ class DiscountWidget extends StatelessWidget {
             ),
           ),
           Container(
-            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 235, right: 10),
+            margin: const EdgeInsets.only(
+                top: 325, bottom: 10, left: 235, right: 10),
             padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
@@ -110,7 +111,8 @@ class DiscountWidget extends StatelessWidget {
                 ),
               )),
           Container(
-            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 450, right: 10),
+            margin: const EdgeInsets.only(
+                top: 325, bottom: 10, left: 450, right: 10),
             padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
@@ -160,7 +162,8 @@ class DiscountWidget extends StatelessWidget {
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 664, right: 10),
+            margin: const EdgeInsets.only(
+                top: 325, bottom: 10, left: 664, right: 10),
             padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
@@ -210,7 +213,8 @@ class DiscountWidget extends StatelessWidget {
                 color: Color.fromARGB(198, 131, 127, 127),
               )),
           Container(
-            margin: const EdgeInsets.only(top: 325, bottom: 10, left: 878, right: 10),
+            margin: const EdgeInsets.only(
+                top: 325, bottom: 10, left: 878, right: 10),
             padding: const EdgeInsets.symmetric(horizontal: 10),
             height: 150,
             width: 200,
