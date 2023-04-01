@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:food/sdra%20arif/tab1.dart';
+import 'package:food/sdra%20arif/tab2.dart';
+import 'package:food/sdra%20arif/tab3.dart';
 
 class BookingScreen extends StatefulWidget {
   const BookingScreen({super.key});
@@ -38,54 +41,10 @@ class _BookingScreenState extends State<BookingScreen> {
        ),
        body: TabBarView(
         children: [
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children:  const [
-            Center(child: Image(image: AssetImage("image/active.jpg"),height: 200,width: 400,),),
-            
-             Center(child: Text("Where to next?",
-              style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
-             SizedBox(
-              height: 10,
-            ),
-             Center(child: Text("You haven't started any trip yet.", 
-             style:TextStyle(fontSize: 20,))),
-             Center(child: Text("Once you make a booking,it'll", 
-             style:TextStyle(fontSize: 20,))),
-          ],
-        ),
-        Column(
-           mainAxisAlignment: MainAxisAlignment.center,
-          children:  const [
-             Center(child: Image(image: AssetImage("image/past.jpg"),height: 200,width: 400,),),
-           
-             Center(child: Text("Revisit Past trip",
-              style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
-             SizedBox(
-              height: 10,
-            ),
-             Center(child: Text("Here you can refer to all past", 
-             style:TextStyle(fontSize: 20,))),
-             Center(child: Text("trips and get inspiration for you", 
-             style:TextStyle(fontSize: 20,))),
-          ],
-        ),
-        Column(
-           mainAxisAlignment: MainAxisAlignment.center,
-          children:  const [
-             Center(child: Image(image: AssetImage("image/canceled.jpg"),height: 200,width: 400,),),
-            
-             Center(child: Text("Sometimes plans change",
-              style:TextStyle(fontSize: 40,fontWeight: FontWeight.bold))),
-             SizedBox(
-              height: 10,
-            ),
-             Center(child: Text("Here you can refer to all trips", 
-             style:TextStyle(fontSize: 20,))),
-          ],
-        )
+        tab1(),
+        tab2(),
+        tab3(),
        ]),
-       
       ),
     );
   }
