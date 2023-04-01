@@ -11,22 +11,16 @@ class tab1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-      
       itemCount: TripList.length,
       itemBuilder: (context, index) {
       List<User> user = TripList;
-      return  Column(
-        children: [
-          Text("Turkey\nJun 11,2019 - Jun 19,2019"),
-          Card(
-            child: ListTile(
-              leading:Image.asset(TripList[index].emg),
-              title: Text(TripList[index].name),
-              subtitle: Text(TripList[index].day),
-              trailing: Icon(Icons.menu),
-            ),
-          ),
-        ],
+      return  Card(
+        child: ListTile(
+          leading:Image.asset(TripList[index].emg),
+          title: Text(TripList[index].name),
+          subtitle: Text(TripList[index].day),
+          trailing: Icon(Icons.menu),
+        ),
       );
      },
    ),
