@@ -11,16 +11,14 @@ class tab1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-      padding: EdgeInsets.all(45),
-      shrinkWrap: true,
       itemCount: TripList.length,
       itemBuilder: (context, index) {
       List<User> user = TripList;
-      return Card(
+      return  Card(
         child: ListTile(
           leading:Image.asset(TripList[index].emg),
           title: Text(TripList[index].name),
-          subtitle: Text('${TripList[index].day}\n${TripList[index].comm}'),
+          subtitle: Text(TripList[index].day),
           trailing: Icon(Icons.menu),
         ),
       );
