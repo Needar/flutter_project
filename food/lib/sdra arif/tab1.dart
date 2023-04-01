@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'class.dart';
-
 class tab1 extends StatelessWidget {
   const tab1({super.key});
 
