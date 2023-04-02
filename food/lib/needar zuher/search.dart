@@ -114,7 +114,7 @@ class _SearchScreenState extends State<SearchScreen> {
               left: 35,
               child: Icon(
                 Icons.search_outlined,
-                size: 25,
+                size: 24,
               ),
             ),
             const Positioned(
@@ -210,7 +210,7 @@ class _SearchScreenState extends State<SearchScreen> {
             DiscountWidget(),
             const Positioned(
                 left: 15,
-                top: 520,
+                top: 540,
                 child: Text(
                   "More for you",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
