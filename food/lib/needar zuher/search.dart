@@ -114,7 +114,7 @@ class _SearchScreenState extends State<SearchScreen> {
               left: 35,
               child: Icon(
                 Icons.search_outlined,
-                size: 24,
+                size: 25,
               ),
             ),
             const Positioned(
