@@ -207,7 +207,7 @@ class _SearchScreenState extends State<SearchScreen> {
                   "Travel more, spend less",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 )),
-            DiscountWidget(),
+            ScrollScreen(),
             const Positioned(
                 left: 15,
                 top: 540,
